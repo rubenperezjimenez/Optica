@@ -1,20 +1,21 @@
-/* SIMULAMOS QUE CAMBIE TOOOODA MI SECCION DE PELICULAS */
+/*.box {
+    color:red;
+    background-color: white;
+}*/
 
 * {
-    margin: 0;
-    padding: 0;
-    /* Cpm border-box, los valores en porcentaje tienen en cuenta
+  margin: 0;
+  padding: 0;
+  /* Cpm border-box, los valores en porcentaje tienen en cuenta
     el margin y padding para hacer el calculo. Si no, calculan
     el ancho total MAS estas dos propiedades generando contenedores
     mas anchos de lo que queremos. */
-    box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(56, 56, 56);
-    color: white;
-}
+  font-family: 'Roboto', sans-serif;
+  background-color: #383838;
+  color: white; }
 
 h1,
 h2,
@@ -22,197 +23,153 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto Slab', serif;
-}
+  font-family: 'Roboto Slab', serif; }
 
 a {
-    color: white;
-    text-decoration: none;
-}
+  color: white;
+  text-decoration: none; }
 
 /* CLASES AUXILIARES */
-
 .secciones {
-    margin: 100px 0;
-    padding: 0 100px;
-}
+  margin: 100px 0;
+  padding: 0 100px; }
 
 /* HEADER */
-
 .header {
-    
-    width: 100%;
-    padding: 0 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .headerLogo {
-    display: flex;
-    align-items: center;
-}
+  display: flex;
+  align-items: center; }
 
 .headerLogo img {
-    width: 200px;
-    /*filter: invert(100);*/
-}
+  width: 200px;
+  /*filter: invert(100);*/ }
 
 .headerMenu {
-    width: 40%;
-}
+  width: 60%; }
 
 .headerMenu ul {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    list-style: none;
-    padding:10px;
-}
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style: none;
+  padding: 10px; }
 
 .headerMenu ul li {
-    display: inline-block;
-}
+  display: inline-block; }
 
 /* HERO */
-
 .hero {
-    width: 100%;
-    height: 100vh;
-    background-image: url("../images/the-batman.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/the-batman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 /* BIOGRAFIA */
-
 .biografia {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    font-size: 1.25rem;
-    line-height: 1.8;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.25rem;
+  line-height: 1.8; }
 
 .biografia aside,
 .biografia img {
-    height: 100%;
-}
+  height: 100%; }
 
 /* PELICULAS */
-
-
 /* GADGETS */
-
 .gadgetsCard {
-    background-color: white;
-    width: 350px;
-    height: 350px;
-    color: black;
-    text-align: center;
-    border: 3px solid black;
-    border-radius: 50%;
-    overflow: hidden;
-}
+  background-color: white;
+  width: 350px;
+  height: 350px;
+  color: black;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 50%;
+  overflow: hidden; }
 
 .gadgetsCard img {
-    width: 100%;
-}
+  width: 100%; }
 
 .gadgetsCard h3 {
-    font-size: 1.875rem;
-    margin-top: 20px;
-}
+  font-size: 1.875rem;
+  margin-top: 20px; }
 
 /* FOOTER */
-
 .footer {
-    background-color: black;
-    padding: 50px 0;
-}
+  background-color: black;
+  padding: 50px 0; }
 
 .footerRow {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    /* 
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* 
     Ejemplo parecido con grid (sin los div):
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
         "menu redes"
-        "footer footer"; */
-}
+        "footer footer"; */ }
 
 .footerMenu, .footerSocial {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-}
+  width: 25%;
+  display: flex;
+  justify-content: center; }
 
 .footerMenu ul {
-    list-style: none;
-}
+  list-style: none; }
 
 .footerMenu ul li {
-    margin-top: 5px;
-}
+  margin-top: 5px; }
 
 .footerForm {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%; }
 
 .footerForm input {
-    width: 100%;
-    height: 30px;
-    margin-bottom: 10px;
-    border: 0px solid;
-    border-radius: 10px;
-    padding-left: 10px;
-}
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 0px solid;
+  border-radius: 10px;
+  padding-left: 10px; }
 
 .footerForm input[type="submit"] {
-    background-color: red;
-    color: white;
-    width: 50%;
-    padding: 0;
-}
+  background-color: red;
+  color: white;
+  width: 50%;
+  padding: 0; }
 
 .footerSocial a {
-    margin-left: 10px;
-}
+  margin-left: 10px; }
 
 .footerSocial img {
-    height: 60px;
-}
+  height: 60px; }
 
 /* MEDIA QUERIES */
-
 @media screen and (max-width: 768px) {
-    .footerRow {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footerMenu, .footerForm {
-        margin-bottom: 50px;
-    }
-
-    .footerForm {
-        width: 80%;
-    }
-}
+  .footerRow {
+    flex-direction: column;
+    align-items: center; }
+  .footerMenu, .footerForm {
+    margin-bottom: 50px; }
+  .footerForm {
+    width: 80%; } }
 
 @media screen and (max-width: 500px) {
-    .footerSocial img {
-        height: 40px;
-    }
-}
+  .footerSocial img {
+    height: 40px; } }
