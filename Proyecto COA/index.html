@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
@@ -7,7 +7,10 @@
 	<link rel="stylesheet" href="estilosCSS.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville&display=swap"
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville&family=Quicksand&display=swap"
 		rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 	<!-- Glyphicon -->
@@ -24,15 +27,17 @@
 				<!--
 				<li><a href="index.html" title="">Clase 11-12</a></li>>
 				-->
-				<li><a href="" title="">Servicios</a></li>
-				<li><a href="" title="">Productos</a></li>
-				<li><a href="" title="">Equipamiento</a></li>
-				<li><a href="" title="">Conoce más</a></li>
-				<li><a href="" title="">Empresas</a></li>
-				<li><a href="" title="">Nosotros</a></li>
+				<li><a href="#Servicios" title="">Servicios</a></li>
+				<li><a href="#Productos" title="">Productos</a></li>
+				<li><a href="#Equipamiento" title="">Equipamiento</a></li>
+				<li><a href="#ConoceMas" title="">Conoce más</a></li>
+				<li><a href="#Empresas" title="">Empresas</a></li>
+				<li><a href="#Nosotros" title="">Nosotros</a></li>
 			</ul>
 		</nav>
 	</header>
+
+
 	<main>
 		<div class="container-fluid">
 			<div class="row">
@@ -40,9 +45,10 @@
 			</div>
 		</div>
 
+		<!---->
 		<div id="Servicios" class="container-fluid">
-			<div class="row" style="background-color: #ad8f61;">
-				<div class="col-xl-2">
+			<div class="row" style="background-color: var(--Servicios);">
+				<div class="col-sm-2">
 				</div>
 
 				<div class="col-xl-4" style="align-items: center;">
@@ -64,18 +70,21 @@
 						<ul>De contacto</ul>
 						<li>Reparacion de lentes</li>
 					</ul>
-					<ul>style="list-style: none;"><h3>Gastos Médicos Mayores</h3>
+					<ul style="list-style: none;">
+						<h3>Gastos Médicos Mayores</h3>
 						<li>Dentegra</li>
 					</ul>
 
 				</div>
 
-			</div>
+			</div>	
 		</div>
+		
+		<!---->
 		<div id="Productos" class="container-fluid">
-			<div class="row" style="background-color: #a39ebd;">
+			<div class="row" style="background-color: var(--Productos)">
 				<div class="col-xl-2 Renglon-Lado">
-
+					
 				</div>
 				<div class="col-xl-4 Renglon-Lado">
 					<img src="./media/Productos.jpg">
@@ -88,44 +97,38 @@
 				</div>
 			</div>
 		</div>
-
+		<!---->
 		<div id="Equipamiento" class="container-fluid">
-			<div class="row" style="background-color: #edeced;">
-				<div class="col-xl-2">
+			<div class="row" style="color: White; background-color: var(--Equipamiento);">
+				<div class="col-sm-6" style="align-items: right;">
+					<img src="https://placekitten.com/401/401">
 				</div>
 
-				<div class="col-xl-4" style="align-items: center;">
+				<div class="col-sm-6" style="align-items: left;">
+					<h3>Equipamiento</h3>
+					<img src="./media/Equipamiento.jpg">
+				</div>
+			</div>
+		</div>
+
+		<!---->
+		<div id="Nosotros" class="container-fluid">
+			<div class="row" style="background-color: var(--Nosotros); width:100% ;">
+				<div class="col-sm-6 Renglon-Lado">
+					<p>En Centro Optico de Aguascalientes nos encargamos de cuidar su visión.</p>
+					<p>Con un equipo profesional y más de 20 años de experiencia en el campo de la salud visual,
+						puede tener toda la tranquilidad de que su vista está en excelentes manos</p>
+					<ul style="list-style: none; justify-content: center;">
+						<li>Historia</li>
+						<li>Nuestro equipo</li>
+						<li>Nuestros valores</li>
+					</ul>
+				</div>
+				<div class="col-sm-6" class="img-fluid">
 					<img src="https://placekitten.com/402/402">
 				</div>
 
-				<div class="col-xl-4" style="width: 100%;">
-					<p>En Centro Optico de Aguascalientes nos encargamos de cuidar su visión.</p>
-					<p>Con un equipo profesional y más de 20 años de experiencia en el campo de la salud visual,
-						puede
-						tener toda la tranquilidad de que su vista está en excelentes manos</p>
-				</div>
-			</div>
-		</div>
-
-		<div id="Nosotros" class="container-fluid">
-			<div class="row" style="background-color: #131f42;">
-				<div class="col-xl-2 Renglon-Lado">
-				</div>
-				<div class="col-xl-4 Renglon-Lado">
-					<p>En Centro Optico de Aguascalientes nos encargamos de cuidar su visión.</p>
-					<p>Con un equipo profesional y más de 20 años de experiencia en el campo de la salud visual,
-						puede tener toda la tranquilidad de que su vista está en excelentes manos</p>
-					<ul style="list-style: none; justify-content: center;">
-						<li>Historia</li>
-						<li>Nuestro equipo</li>
-						<li>Nuestros valores</li>
-					</ul>
-				</div>
-				<div class="col-xl-4">
-					<img src="https://placekitten.com/403/403">
-				</div>
-
-				<div class="col-xl-2 Renglon-Abajo" style="width: 100%; text-align: center;">
+				<div class="col-sm-6 Renglon-Abajo"> <!--style="width: 100%; text-align: center;">-->
 					<p>En Centro Optico de Aguascalientes nos encargamos de cuidar su visión.</p>
 					<p>Con un equipo profesional y más de 20 años de experiencia en el campo de la salud visual,
 						puede tener toda la tranquilidad de que su vista está en excelentes manos</p>
@@ -137,7 +140,13 @@
 				</div>
 			</div>
 		</div>
+
+
 	</main>
+
+
+
+
 	<footer class="container-fluid text-center" style="    border-top: solid 1px ;margin-top: 10px;">
 		<!-- Container (Contact Section) -->
 		<div id="contact" class="container-fluid bg-grey">

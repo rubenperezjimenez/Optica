@@ -1,7 +1,23 @@
 @charset "UTF-8";
 
+:root {
+  
+  --Servicios: #a39ebd;
+  --Productos: #ad8f61;
+  --Equipamiento: #131f42;
+  --Nosotros: #a39ebd;
+
+
+  --FontHeader:'Times New Roman',serif;
+  --FontHeader: 'Libre Baskerville', serif;
+  --FontNav: 'Quicksand', sans-serif;
+  --FontLibre: 'Dancing Script', cursive;
+  --FontDefault: 'Quicksand', sans-serif;
+
+}
+
 * {
-font-family: 'Dancing Script', cursive;
+font-family: var(--FontDefault);
   margin: 0;
   padding: 0;
   /* Cpm border-box, los valores en porcentaje tienen en cuenta
@@ -27,11 +43,13 @@ header nav .flexMenu {
   flex-direction: row;
   /*align-items: center;*/
   list-style: none;
+
   justify-content: center;
-  /*padding: 0px;
+    /*padding: 0px;
   /*
   font-size: 1.2rem; 
   */
+  
 }
 
 .flexMenu li a {
@@ -40,7 +58,7 @@ header nav .flexMenu {
   margin-left: 10px;
   margin-right: 10px;
   
-  font-family: 'Libre Baskerville', serif;
+  font-family: var(--FontNav);
   /*color: #4c00ff; 
 */
 }
@@ -60,13 +78,11 @@ header h1 {
 .row {
   text-align: center;
   align-items: center;
-  color:red;
-  border: red;
   border-width: 10px;
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 600px) {
     .Renglon-Lado {
     }
 
@@ -76,7 +92,7 @@ header h1 {
   
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
     .Renglon-Lado {
       display: none;
     }
@@ -128,7 +144,9 @@ header h1 {
   background-color: blue; 
 }
 
-
+.container-fluid {
+  margin-top: 10px;
+}
 .grid-container {
   display: grid;
   margin: 40px 0 40px 0;
