@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+* {
+font-family: 'Dancing Script', cursive;
+  margin: 0;
+  padding: 0;
+  /* Cpm border-box, los valores en porcentaje tienen en cuenta
+  el margin y padding para hacer el calculo. Si no, calculan
+  el ancho total MAS estas dos propiedades generando contenedores
+  mas anchos de lo que queremos. */
+  box-sizing: border-box;
+}
+
+
+/* header */
+.la {
+  background-image: url("images/la.jpg"); }
+
+.chicago {
+  background-image: url("images/chicago.jpg"); }
+
+.ny {
+  background-image: url("images/ny.jpg"); }
+
+header nav .flexMenu {
+  display: flex;
+  flex-direction: row;
+  /*align-items: center;*/
+  list-style: none;
+  justify-content: center;
+  /*padding: 0px;
+  /*
+  font-size: 1.2rem; 
+  */
+}
+
+.flexMenu li a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  font-family: 'Libre Baskerville', serif;
+  /*color: #4c00ff; 
+*/
+}
+
+header h1 {
+/*  color: #0095ff;
+  font-size: 2.5rem;
+  padding: 40px; 
+*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: x-large;
+}
+
+.row {
+  text-align: center;
+  align-items: center;
+  color:red;
+  border: red;
+  border-width: 10px;
+}
+
+
+@media (min-width: 1200px) {
+    .Renglon-Lado {
+    }
+
+    .Renglon-Abajo{
+      display:none;
+    }
+  
+}
+
+@media (max-width: 1200px) {
+    .Renglon-Lado {
+      display: none;
+    }
+    .Renglon-Abajo {
+    }
+  
+}
+
+/*Grilla */
+
+/*@media (min-width: 768px) and (max-width: 1500px) {*/ 
+
+.grilla-contenedor{
+    display: grid;
+    margin: 40px 0 40px 0;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(5, 600px);
+    gap: 1px 1px;
+    text-align: center;
+    justify-content:center;
+  /*  font-size: 1.5rem;*/
+    grid-template-areas: 
+      "RenglonUno"
+      "RenglonDos"
+      "RenglonTres"
+      "RenglonCuatro"
+      "RenglonCinco"; }
+  
+/*}*/
+
+.renglonUno{
+  grid-area: RenglonUno;
+  background-color: blue; 
+}
+.renglonDos{
+  grid-area: RenglonDos;
+  background-color: red; 
+}
+.renglonTres{
+  grid-area: RenglonTres;
+  background-color: pink; 
+}
+.renglonCuatro{
+  grid-area: RenglonCuatro;
+  background-color: green; 
+}
+.renglonCinco{
+  grid-area: RenglonCinco;
+  background-color: blue; 
+}
+
+
+.grid-container {
+  display: grid;
+  margin: 40px 0 40px 0;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 50px);
+  gap: 1px 1px;
+  text-align: center;
+  justify-content: stretch;
+  /*  font-size: 1.5rem;*/
+  grid-template-areas: "bannerUno bannerUno bannerUno bannerUno"
+  "bannerDos bannerDos bannerDos bannerDos"
+ "noticiaDos noticiaDos noticiaTres noticiaCuatro"
+ "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro"; }
+
+.bannerUno {
+  grid-area: bannerUno;
+  background-color: #EFF4F7; }
+
+  .bannerDos { 
+  grid-area: bannerDos;
+  background-color: pink; }
+
+.noticiaTres {
+  grid-area: noticiaTres;
+  background-color: #73CAEF; }
+
+.noticiaDos {
+  grid-area: noticiaDos;
+  background-color: #89FFFB; }
+
+.noticiaCuatro {
+  grid-area: noticiaCuatro;
+  background-color: #41E2DD; }
+
+.noticiaCinco {
+  grid-area: noticiaCinco;
+  background-color: #50D8C8; }
+
+.noticiaSeis {
+  grid-area: noticiaSeis;
+  background-color: #53B4F4; }
+
+.noticiaSiete {
+  grid-area: noticiaSiete;
+  background-color: #CDE0E4; }
+
+/* Footer */
+footer {
+  background-color: #e1eef7;
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0; }
+
+footer h5 {
+  /*font-size: 2rem;
+  font-weight: 900;
+  */
+  text-align: center; }
