@@ -81,6 +81,20 @@ header h1 {
   border-width: 10px;
 }
 
+@media (min-width: 800px) {
+
+  .Portada-Chica{
+    display:none;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .Portada-Grande {
+    display: none;
+  }
+}
+
 
 @media (min-width: 600px) {
     .Renglon-Lado {
