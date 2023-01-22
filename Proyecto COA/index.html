@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Centro Optico de Aguascalientes | ¡Nosotros nos encargamos de su visión!</title>
+	<title>Centro Optico Aguascalientes | ¡Nosotros nos encargamos de su visión!</title>
 	<link rel="stylesheet" href="estilosCSS.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
 	<header>
 		<h1>Centro Optico Aguascalientes</h1>
 		<nav>
-			<ul class="flexMenu">
+			<ul class="flexMenu" style="flex-wrap:wrap">
 				<!--
 				<li><a href="index.html" title="">Clase 11-12</a></li>>
 				-->
@@ -36,82 +36,76 @@
 			</ul>
 		</nav>
 	</header>
-
-
 	<main>
-		<div class="container-fluid">
+		<div class="container-fluid" style="display: flex">
 			<div class="row">
+			</div class="Portada-Grande">
+			<!--
+				<picture style="position:relative">
+					<source srcset="https://placekitten.com/600/600" class="img-fluid Portada-Grande" style="justify-content:flex-center; width: 100%;" media="(max-width: 1500px)">
+					<source srcset="https://placekitten.com/2000/800" class="img-fluid Portada-Grande" style="justify-content:flex-center; width: 100%;">
+					<img src="https://placekitten.com/600/600" class="img-fluid Portada-Grande" style="justify-content:flex-center; width: 100%;">
+				</picture>
+				-->
+			<picture>
+				<source srcset="https://placekitten.com/2000/600" class="img-fluid" style="width: 100%" media="(min-width: 1000px)">
+				<img src="https://placekitten.com/600/600">
+			</picture>
+			<p
+				style="position:absolute; white-space: nowrap; margin-left:10px; margin-top: 0%; z-index: 0; color:white; font-size:xx-large; font-weight: 500;">
 
-				<img src="https://placekitten.com/2000/800" class="img-fluid Portada-Grande" style="align-items: center;">
+			<h3>
+				¡Su visión es primero!
+			</h3>
+			</p>
+			<img src="./media/LogoCentroOpticoAguascalientes.png" alt="" title=""
+				style="width: 15%; height: 15%;"></img>
+			
+		</div>
+		<div class="Portada-Chica">
 
-					<!-- Insertar logo
+			<img src="https://placekitten.com/350/350" class="img-fluid">
 
--->
-					<p style="position:absolute; margin-top: 10%; z-index: 0;  width: 40%; color:white; font-size:xx-large; font-weight: 500;" class="Portada-Grande">
-						Su visión es primero!
-					</p>
-
-					<img src="./media/LogoCentroOpticoAguascalientes.png" alt="" title=""
-						style="position:absolute;  margin-top: 10%; z-index: 0 ; margin-left: 100px; width: 20%;"
-						class="Portada-Grande">
-					</img>
-
-
-
-
-
-				<div class="Portada-Chica">
-
-					<img src="https://placekitten.com/350/350" class="img-fluid" style="align-items: center;">
-
-					<!-- Insertar logo
-
--->
-					<p>
-					<h3>
-						!Su visión es primero! v3
-					</h3>
-					</p>
-
-					<img src="./media/LogoCentroOpticoAguascalientes.png" alt="" title="" style="width: 20%;">
-					</img>
-
-				</div>
-
-				<!---->	
-
-
+			<div>
+				<h3>
+					¡Su visión es primero! v3
+				</h3>
+			</div>
+			<div>
+				<img src="./media/LogoCentroOpticoAguascalientes.png" alt="" title="" style="width: 20%; height: 20%;">
+				</img>
 			</div>
 		</div>
+		</div>
+		<!---->
+		</div>
+
 
 		<!---->
-		<div id="Servicios" class="container-fluid">
-			<div class="row" style="background-color: var(--Servicios);">
-				<div class="col-sm-2">
-				</div>
-
-				<div class="col-xl-4" style="align-items: center;">
+		<div id="Servicios">
+			<hr>
+			<div class="row" style="display:flex;background-color:var(--Servicios);">
+				<div class="item">
 					<img src="https://placekitten.com/401/401">
 				</div>
-
-
-				<div class="col-xl-4">
+				<div class="item">
 					<ul style="list-style: none;">
-						<h3>Examen visual integral</h3>
-						<li>Refracción</li>
-						<li>Salud Visual</li>
-						<li>Vision Binocular</li>
-						<li>Vision Baja</li>
+						<h4>Servicios</h2>
+							<hr>
+							<h6>Examen visual integral</h3>
+								<li>Refracción</li>
+								<li>Salud Visual</li>
+								<li>Vision Binocular</li>
 					</ul>
 					<ul style="list-style: none;">
-						<h3>Adaptacion de lentes</h3>
-						<li>Oftálmicos</li>
-						<ul>De contacto</ul>
-						<li>Reparacion de lentes</li>
+						<h6>Adaptacion de lentes</h3>
+							<li>Oftálmicos</li>
+							<ul>De contacto</ul>
+							<li>Reparacion de lentes</li>
 					</ul>
 					<ul style="list-style: none;">
-						<h3>Gastos Médicos Mayores</h3>
-						<li>Dentegra</li>
+						<h6>Gastos Médicos Mayores</h3>
+							<li>Dentegra</li>
 					</ul>
 
 				</div>
@@ -121,17 +115,11 @@
 
 		<!---->
 		<div id="Productos" class="container-fluid">
-			<div class="row" style="background-color: var(--Productos)">
-				<div class="col-xl-2 Renglon-Lado">
-
-				</div>
-				<div class="col-xl-4 Renglon-Lado">
-					<img src="./media/Productos.jpg">
-				</div>
-				<div class="col-xl-4">
+			<div class="row" style="background-color: var(--Productos);flex-direction: row-reverse;">
+				<div class="col-xl-6">
 					<img src="https://placekitten.com/400/400">
 				</div>
-				<div class="col-xl-4 Renglon-Abajo">
+				<div class="col-xl-6">
 					<img src="./media/Productos.jpg">
 				</div>
 			</div>
@@ -139,11 +127,12 @@
 		<!---->
 		<div id="Equipamiento" class="container-fluid">
 			<div class="row" style="color: White; background-color: var(--Equipamiento);">
-				<div class="col-sm-6" style="align-items: right;">
+
+				<div class="col-xl-6">
 					<img src="https://placekitten.com/401/401">
 				</div>
 
-				<div class="col-sm-6" style="align-items: left;">
+				<div class="col-xl-6">
 					<h3>Equipamiento</h3>
 					<img src="./media/Equipamiento.jpg">
 				</div>
@@ -152,25 +141,14 @@
 
 		<!---->
 		<div id="Nosotros" class="container-fluid">
-			<div class="row" style="background-color: var(--Nosotros); width:100% ;">
-				<div class="col-sm-6 Renglon-Lado">
-					<h3>En Centro Optico de Aguascalientes nos encargamos de cuidar su visión.</p>
-					<h3>Con un equipo profesional y más de 20 años de experiencia en el campo de la salud visual,
-						puede tener toda la tranquilidad de que su vista está en excelentes manos</p>
-					<ul style="list-style: none; justify-content: center;">
-						<li>Historia</li>
-						<li>Nuestro equipo</li>
-						<li>Nuestros valores</li>
-					</ul>
-				</div>
-				<div class="col-sm-6" class="img-fluid">
+			<div class="row" style="background-color: var(--Nosotros);flex-direction: row-reverse;">
+				<div class="col-xl-6" class="img-fluid">
 					<img src="https://placekitten.com/402/402">
 				</div>
-
-				<div class="col-sm-6 Renglon-Abajo"> <!--style="width: 100%; text-align: center;">-->
-					<h3>En Centro Optico de Aguascalientes nos encargamos de cuidar su visión.</p>
-					<h3>Con un equipo profesional y más de 20 años de experiencia en el campo de la salud visual,
-						puede tener toda la tranquilidad de que su vista está en excelentes manos</p>
+				<div class="col-xl-6">
+					<h3>En Centro Optico Aguascalientes nos encargamos de cuidar su visión.</h3>
+					<p>Con un equipo profesional y más de 20 años de experiencia en el campo de la salud
+						visual, puede tener toda la tranquilidad de que su vista está en excelentes manos</p>
 					<ul style="list-style: none; justify-content: center;">
 						<li>Historia</li>
 						<li>Nuestro equipo</li>

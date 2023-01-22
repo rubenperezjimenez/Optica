@@ -55,9 +55,9 @@ header nav .flexMenu {
 .flexMenu li a {
   text-decoration: none;
   color: black;
-  margin-left: 10px;
-  margin-right: 10px;
-  
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
   font-family: var(--FontNav);
   /*color: #4c00ff; 
 */
@@ -76,11 +76,21 @@ header h1 {
 }
 
 .row {
-  text-align: center;
+  flex-direction: row; 
+  justify-content:center ;
   align-items: center;
+  padding: 0px;
+
+  /*
+    height: 100%;
+  text-align: center;
   border-width: 10px;
+  */
 }
 
+.item{  
+  margin:0px 1% 0px 1%;
+}
 @media (min-width: 800px) {
 
   .Portada-Chica{
@@ -159,7 +169,8 @@ header h1 {
 }
 
 .container-fluid {
-  margin-top: 10px;
+  /*margin-top: 10px;*/
+  
 }
 .grid-container {
   display: grid;
